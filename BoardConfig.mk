@@ -93,7 +93,7 @@ BOARD_KERNEL_CMDLINE := \
 TARGET_KERNEL_CONFIG := vendor/veux-qgki_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/veux
 TARGET_KERNEL_NO_GCC := true
-
+TARGET_KERNEL_CLANG_VERSION := r563880c
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := peux|veux
