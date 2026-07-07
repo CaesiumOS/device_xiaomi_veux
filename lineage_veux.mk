@@ -14,25 +14,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common Lunaris stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Lunaris flags
-WITH_GMS := true
-WITH_BCR := true
-
-# Display and specific Lunaris settings
-TARGET_CUSTOM_UDFPS := false
-TARGET_OPTIMIZED_DEXOPT := true
-TARGET_SUPPORTED_REFRESH_RATES := 60,120
-SURFACE_FLINGER_BOOST := true
-HBM_SUPPORTED := true
-HBM_NODE := /sys/devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm
-PRODUCT_NO_CAMERA := true
-
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.lunaris.maintainer=acerhizm \
-    ro.product.mod_device=veux_global \
-    ro.miui.ui.version.name=V140 \
-    ro.miui.ui.version.code=13 \
-    ro.build.product=veux
+    ro.dt.acknowledgement=acerhizm \
+    ro.cs.device.updateidentifier=KC
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
